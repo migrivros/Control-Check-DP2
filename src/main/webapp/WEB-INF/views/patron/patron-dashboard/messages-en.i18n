@@ -1,0 +1,25 @@
+ # i18n-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+ 
+patron.dashboard.form.label.numberOfAcceptedPatronages = Number of Accepted Patronages
+patron.dashboard.form.label.numberOfDeniedPatronages = Number of Denied Patronages
+patron.dashboard.form.label.numberOfProposedPatronages = Number of Proposed Patronages
+patron.dashboard.form.label.maxAcceptedPatronages =  Maximum Budget of Accepted Patronages
+patron.dashboard.form.label.minAcceptedPatronages = Minimum Budget of Accepted Patronages
+patron.dashboard.form.label.averageAcceptedPatronages = Average Budget of Accepted Patronages
+patron.dashboard.form.label.deviationAcceptedPatronages = Deviation Budget of Accepted Patronages
+patron.dashboard.form.label.maxDeniedPatronages =  Maximum Budget of Denied Patronages
+patron.dashboard.form.label.minDeniedPatronages = Minimum Budget of Denied Patronages
+patron.dashboard.form.label.averageDeniedPatronages = Average Budget of Denied Patronages
+patron.dashboard.form.label.deviationDeniedPatronages = Deviation Budget of Denied Patronages
+patron.dashboard.form.label.maxProposedPatronages =  Maximum Budget of Proposed Patronages
+patron.dashboard.form.label.minProposedPatronages = Minimum Budget of Proposed Patronages
+patron.dashboard.form.label.deviationProposedPatronages = Deviation Budget of Proposed Patronages
+patron.dashboard.form.label.averageProposedPatronages = Average Budget of Proposed Patronages

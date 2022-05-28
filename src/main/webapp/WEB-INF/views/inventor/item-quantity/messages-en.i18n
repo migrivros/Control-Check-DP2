@@ -1,0 +1,31 @@
+# i18n-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+inventor.item-quantity.list.label.quantity = Quantity
+inventor.item-quantity.list.label.item-name = Name
+inventor.item-quantity.list.label.item-code = Code
+inventor.item-quantity.list.label.item-type = Type
+inventor.item-quantity.list.label.item-technology = Technology
+inventor.item-quantity.list.label.item-retailPrice = Retail Price
+
+
+inventor.item-quantity.form.label.quantity = Quantity
+inventor.item-quantity.form.label.item = Item
+inventor.item-quantity.form.button.create = Create
+inventor.item-quantity.form.button.update = Update quantity
+inventor.item-quantity.form.button.delete = Delete from toolkit
+
+inventor.item-quantity.button.addTool = Add Tool
+inventor.item-quantity.button.addComponent = Add Component
+inventor.item-quantity.component.button.create = Add Component
+inventor.item-quantity.tool.button.create = Add Tool
+
+inventor.item-quantity.form.error.negative-number = Quantity must be positive
+inventor.item-quantity.form.error.incorrect-tool-quantity = You can only have 1 tool

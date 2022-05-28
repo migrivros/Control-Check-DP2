@@ -1,0 +1,8 @@
+recordIndex,title,body,email,critical,more-info,confirmation
+0,This is an announcement title,This is the announcement body,test@mail.com,false,,true
+1,Be careful with your titles and descriptions,Please take in account the pattern we all agreed,administrator@hotmail.com,true,https://www.good-practices.com,true
+2,You cannot have more than one tool,Remember the maximum quantity of a type of tool is one,administrator2@gmail.com,true,https://www.acme-toolkits.com,true
+3,Title test title test title test,Announcement body announcement body announcement body announcement body announcement body announcement body,test2@mail.com,false,,true
+4,How to create an announcement,You have to click on the create button and fill the required information and then submit,useful-information@outlook.es,false,https://www.more-info.com,true
+5,How to become a patron,Sign in and click on Account in the menu and then click the option of Become a patron,useful-information@outlook.es,true,https://www.more-info.com,true
+6,This is the last announcement title for test,This is the last announcement body for test,test@mail.com,false,https://www.more-info.com,true

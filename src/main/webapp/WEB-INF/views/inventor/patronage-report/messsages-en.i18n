@@ -1,0 +1,23 @@
+# i18n-en.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+inventor.patronage-report.list.label.sequenceNumber = Sequence number:
+inventor.patronage-report.list.label.patronage.code = Patronage code:
+
+inventor.patronage-report.form.label.sequenceNumber = Sequence number:
+inventor.patronage-report.form.label.creationMoment = Creation:
+inventor.patronage-report.form.label.memorandum = Memorandum:
+inventor.patronage-report.form.label.moreInfo = More information:
+inventor.patronage-report.form.label.patronage.legalStuff = Legal Stuff:
+inventor.patronage-report.form.label.patronage.budget = Buget:
+
+inventor.patronage-report.form.label.confirmation = Confirm
+inventor.patronage-report.form.button.create = Create
+inventor.patronage-report.form.label.spam = This is a spam

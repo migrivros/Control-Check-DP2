@@ -1,0 +1,9 @@
+recordIndex,sequenceNumber,code,creationMoment,memorandum,moreInfo,legalStuff,budget
+0,ABC-123-A:1,ABC-123-A,2022/03/15 19:35,Esta herramienta es muy útil para carpintería,https://es.wikipedia.org/wiki/Martillo,This is legal stuff,"EUR 1,000.00"
+1,ABC-123-A:2,ABC-123-A,"2021/12/31 00:00",Esta herramienta es muy útil para carpintería,https://es.wikipedia.org/wiki/Martillo/a/b,This is legal stuff,"EUR 1,000.00"
+2,ABC-123-A:3,ABC-123-A,2022/03/15 19:35,<h1>Esta herramienta es muy útil para carpintería</h1>,,This is legal stuff,"EUR 1,000.00"
+3,ABC-123-A:4,ABC-123-A,2022/03/15 19:35,Esta herramienta es muy útil para carpintería,,This is legal stuff,"EUR 1,000.00"
+4,ABC-123-B:1,ABC-123-B,2022/03/15 00:00,E,https://es.wikipedia.org/wiki/Martillo,This is legal stuff,"EUR 1,000.00"
+5,ABC-123-B:2,ABC-123-B,2022/03/15 19:35,Esta herramienta es muy útil para carpintería,https://es.wikipedia.org/wiki/Martillo/?a=1&b=2,This is legal stuff,"EUR 1,000.00"
+6,ABC-123-B:3,ABC-123-B,2022/03/15 19:35,<script>alert("Esta herramienta es muy útil para carpintería")</script>,,This is legal stuff,"EUR 1,000.00"
+7,ABC-123-B:4,ABC-123-B,2022/03/15 19:35,Esta herramienta es muy útil para carpintería,,This is legal stuff,"EUR 1,000.00"

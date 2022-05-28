@@ -1,0 +1,7 @@
+key,status,code,legal-stuff,budget,creation-moment,start-date,end-date,more-info,published,key:patron,key:inventor
+patronage-01,PROPOSED,ABC-123-A,This is legal stuff,EUR 1000.0,2000/01/01 00:00,2000/02/01 00:00,2000/03/01 00:00,null,false,patron-01,inventor-01
+patronage-02,ACCEPTED,ABC-123-B,This is legal stuff,EUR 1000.0,1920/01/01 00:00,2020/02/01 00:00,2030/03/01 00:00,http://example.com/,true,patron-01,inventor-02
+patronage-03,DENIED,ABC-123-C,T,EUR 1000.0,1920/01/01 00:00,2020/02/01 00:00,2030/03/01 00:00,http://example.com/,true,patron-05,inventor-01
+patronage-04,ACCEPTED,ABC-123-D,Th,EUR 1000.0,1920/01/01 00:00,2020/02/01 00:00,2030/03/01 00:00,http://example.com/,true,patron-04,inventor-03
+patronage-05,DENIED,ABC-123-E,Thssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,EUR 1000.0,1920/01/01 00:00,2020/02/01 00:00,2030/03/01 00:00,http://example.com/,true,patron-03,inventor-04
+patronage-06,ACCEPTED,ABC-123-F,Thsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss,EUR 1000.0,1920/01/01 00:00,2020/02/01 00:00,2030/03/01 00:00,http://example.com/,true,patron-02,inventor-05

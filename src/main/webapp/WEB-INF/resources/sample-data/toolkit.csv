@@ -1,0 +1,18 @@
+key,code,title,description,assembly-notes,more-info,total-price,draft-mode,key:inventor
+toolkit-01,FLS-836,Toolkito1,This is the first toolkit in the system,Avengers assemble,http://lichess.org,EUR 0.0,true,inventor-01
+toolkit-02,VKM-319-E,Toolkito2,This is the second toolkit,Avengers assemble,http://lichess.org,EUR 0.0,true,inventor-01
+toolkit-03,WEY-533,Toolkito3,This is the third toolkit,Avengers assemble,http://www.us.es,EUR 0.0,true,inventor-01
+toolkit-04,HUF-469,Toolkito4,This is the fourth toolkit,Avengers assemble,http://www.acme-jobs.com/discount,EUR 0.0,true,inventor-02
+toolkit-05,TOT-975-Z,Toolkito5,This is the published toolkit,Avengers assemble,http://lichess.org,EUR 0.0,false,inventor-02
+toolkit-06,PHJ-497,Toolkito6,Toolkit 6 here bby,Avengers assemble,https://www.kidscanfly.ca/wp-content/uploads/2020/08/happy-birthday.jpeg,EUR 0.0,true,inventor-02
+toolkit-07,RXJ-602-Q,Toolkito7,We are the Seven,Avengers assemble,https://www.acme.org,EUR 0.0,true,inventor-03
+toolkit-08,UTH-377,Toolkito8,The hateful eight,Avengers assemble,https://www.acme.org,EUR 0.0,true,inventor-03
+toolkit-09,BUE-841-I,Toolkito9,This is the ninth toolkit,Avengers assemble,http://lichess.org,GBP 1560.23,false,inventor-03
+toolkit-10,TQO-655-K,Toolkito10,This is the perfect toolkit,Avengers assemble,https://www.acme.org,EUR 0.0,true,inventor-04
+toolkit-11,ODV-057,Toolkito11,This is the dream team toolkit,Avengers assemble,https://www.realbetisbalompie.es/,GBP 0.0,true,inventor-04
+toolkit-12,GDG-857-U,Toolkito12,This is the twelfth toolkit,Avengers assemble,http://lichess.org,EUR 0.0,true,inventor-04
+toolkit-13,FFU-732-B,Toolkito13,This is the bad luck toolkit,Avengers assemble,http://lichess.org,EUR 0.0,true,inventor-05
+toolkit-14,NJZ-691-M,Toolkito14,This is a toolkit,Avengers assemble,http://lichess.org,EUR 0.0,false,inventor-05
+toolkit-15,WRZ-404,Toolkito15Script,"<script>alert(""uwu"")</script>",Avengers assemble,http://lichess.org,EUR 0.0,true,inventor-05
+toolkit-16,YKM-438,"<script>alert(""uwu"")</script>",This toolkit is a test toolkit,Avengers assemble,http://lichess.org,EUR 0.0,true,inventor-06
+toolkit-17,YYE-635-T,Toolkito17,This toolkit is an assembly test,"<script>alert(""uwu"")</script>",http://lichess.org,EUR 100.54,true,inventor-06

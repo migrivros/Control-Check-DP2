@@ -1,0 +1,5 @@
+recordIndex,name,code,technology,description,retail-price,more-info
+0,C,ABZ-000-LL,a,url no válida,EUR 0.10,
+1,Component-2,,java,moneda con muchos decimales,EUR 0.11312,http://www.google.com
+2,Component3,AXZ-999-Z,,tecnologia vacía,EUR 4.00,http://www.rc.com
+3,Component4,USD-999-Z,java2.5,moneda no nula,TTT 5.00,http://www.ddggsg.com

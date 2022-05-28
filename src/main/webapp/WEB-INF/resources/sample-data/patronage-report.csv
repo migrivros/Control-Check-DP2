@@ -1,0 +1,21 @@
+key,serial-number,creation-moment,memorandum,more-info,key:patronage
+patronage-report-01,1,"2022/03/15 19:35",Esta herramienta es muy útil para carpintería,https://es.wikipedia.org/wiki/Martillo,patronage-01
+patronage-report-02,1,"2022/03/15 00:00",E,https://es.wikipedia.org/wiki/Martillo,patronage-02
+patronage-report-03,1,"2022/03/15 12:00",Es,https://es.wikipedia.org/wiki/Martillo,patronage-03
+patronage-report-04,1,"2022/03/15 23:59",Esta herramienta es muy útil para carpinteríaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,https://es.wikipedia.org/wiki/Martillo,patronage-04
+patronage-report-05,1,"2022/01/01 00:00",Esta herramienta es muy útil para carpinteríaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,https://es.wikipedia.org/wiki/Martillo,patronage-05
+patronage-report-06,1,"2021/12/31 23:59",Esta herramienta es muy útil para carpintería,https://es.wikipedia.org/wiki/Martillo/a?b,patronage-06
+patronage-report-07,2,"2021/12/31 00:00",Esta herramienta es muy útil para carpintería,https://es.wikipedia.org/wiki/Martillo/a/b,patronage-01
+patronage-report-08,2,"2022/03/15 19:35",Esta herramienta es muy útil para carpintería,https://es.wikipedia.org/wiki/Martillo/?a=1&b=2,patronage-02
+patronage-report-09,2,"2022/03/15 19:35",Esta herramienta es muy útil para carpintería,http://es.wikipedia.org/wiki/Martillo/b,patronage-03
+patronage-report-10,2,"2022/03/15 19:35",Esta herramienta es muy útil para carpintería,null,patronage-04
+patronage-report-11,2,"2022/03/15 19:35",Esta herramienta es muy útil para carpintería,https://acme.com/a/b,patronage-05
+patronage-report-12,2,"2022/03/15 19:35",!@#~€¬Esta herramienta es muy útil para carpintería¿?%&/()=,ftp://user:pass@acme.org,patronage-06
+patronage-report-13,3,"2022/03/15 19:35",<h1>Esta herramienta es muy útil para carpintería</h1>,null,patronage-01
+patronage-report-14,3,"2022/03/15 19:35",<script>alert("Esta herramienta es muy útil para carpintería")</script>,null,patronage-02
+patronage-report-15,3,"2022/03/15 19:35",Esta herramienta es muy útil para carpintería,https://es.wikipedia.org/wiki/Martillo,patronage-03
+patronage-report-16,3,"2022/03/15 19:35",Esta herramienta es muy útil para carpintería,https://es.wikipedia.org/wiki/Martillo,patronage-04
+patronage-report-17,3,"2022/03/15 19:35",Esta herramienta es muy útil para carpintería,https://es.wikipedia.org/wiki/Martillo,patronage-05
+patronage-report-18,3,"2022/03/15 19:35",Esta herramienta es muy útil para carpintería,https://es.wikipedia.org/wiki/Martillo,patronage-06
+patronage-report-19,4,"2022/03/15 19:35",Esta herramienta es muy útil para carpintería,null,patronage-01
+patronage-report-20,4,"2022/03/15 19:35",Esta herramienta es muy útil para carpintería,null,patronage-02

@@ -1,0 +1,39 @@
+# i18n-en.i18n
+ #
+ # Copyright (C) 2012-2022 Rafael Corchuelo.
+ #
+ # In keeping with the traditional purpose of furthering education and research, it is
+ # the policy of the copyright owner to permit non-commercial use and redistribution of
+ # this software. It has been tested carefully, but it is not guaranteed for any particular
+ # purposes.  The copyright owner does not offer any warranties or representations, nor do
+ # they accept any liabilities with respect to them.
+
+ inventor.patronage.list.label.status = Estado
+ inventor.patronage.list.label.code = Código
+ inventor.patronage.list.label.legalStuff = Asuntos Legales
+ inventor.patronage.list.label.budget = Presupuesto
+ inventor.patronage.list.label.creationMoment = Momento de Creación
+ inventor.patronage.list.label.startDate = Fecha de Inicio
+ inventor.patronage.list.label.endDate = Fecha de Fin
+ inventor.patronage.list.label.moreInfo = Más Información
+ 
+ inventor.patronage.form.label.status = Estado
+ inventor.patronage.form.label.new-status = Cambiar estado a:
+ inventor.patronage.form.label.code = Código
+ inventor.patronage.form.label.legalStuff = Asuntos Legales
+ inventor.patronage.form.label.budget = Presupuesto
+ inventor.patronage.form.label.creationMoment = Momento de Creación
+ inventor.patronage.form.label.startDate = Fecha de Inicio
+ inventor.patronage.form.label.endDate = Fecha de Fin
+ inventor.patronage.form.label.moreInfo = Más Información
+ inventor.patronage.form.label.patron.moreInfo = Más Información del Patrón
+ inventor.patronage.form.label.patron.company = Compañía del Patrón
+ inventor.patronage.form.label.patron.statement = Estado del Patrón
+ inventor.patronage.form.label.patron.userAccount.username = Nombre de Usuario del Patrón
+ inventor.patronage.form.label.patron.userAccount.identity.name = Nombre del Patrón
+ inventor.patronage.form.label.patron.userAccount.identity.surname = Apellidos del Patrón
+ inventor.patronage.form.label.patron.userAccount.identity.email = Correo del Patrón
+
+ inventor.patronage.form.button.create.patronage-report = Crear reporte
+ inventor.patronage.form.button.update = Actualizar
+>

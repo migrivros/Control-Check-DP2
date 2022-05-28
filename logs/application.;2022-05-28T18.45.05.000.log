@@ -1,0 +1,5 @@
+2022-05-28 18:44:59.192 INFO  [acme.Launcher@main] Starting Launcher using Java 1.8.0_281 on MacBook-Pro.local with PID 11413 (/Users/miguel/Downloads/Doc Locales/Miguelito/Universidad/3º Curso/DP2/Workspace-22.7/Frameworks/Acme-Framework-22.7/target/classes started by miguel in /Users/miguel/Downloads/Doc Locales/Miguelito/Universidad/3º Curso/DP2/Workspace-22.7/Projects/Acme-Toolkits) 
+2022-05-28 18:44:59.193 DEBUG [acme.Launcher@main] Running with Spring Boot v2.4.2, Spring v5.3.3 
+2022-05-28 18:44:59.194 INFO  [acme.Launcher@main] The following profiles are active: development,default 
+2022-05-28 18:45:05.256 WARN  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use 
+2022-05-28 18:45:05.260 INFO  [acme.framework.configuration.ShutdownConfiguration@main] The system is shutting down... 

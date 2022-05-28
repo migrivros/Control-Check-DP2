@@ -1,0 +1,57 @@
+# i18n-en.i18n
+ #
+ # Copyright (C) 2012-2022 Rafael Corchuelo.
+ #
+ # In keeping with the traditional purpose of furthering education and research, it is
+ # the policy of the copyright owner to permit non-commercial use and redistribution of
+ # this software. It has been tested carefully, but it is not guaranteed for any particular
+ # purposes.  The copyright owner does not offer any warranties or representations, nor do
+ # they accept any liabilities with respect to them.
+
+ patron.patronage.list.label.status = Estado
+ patron.patronage.list.label.code = Código
+ patron.patronage.list.label.legalStuff = Asuntos Legales
+ patron.patronage.list.label.budget = Presupuesto
+ patron.patronage.list.label.creationMoment = Momento de Creación
+ patron.patronage.list.label.startDate = Fecha de Inicio
+ patron.patronage.list.label.endDate = Fecha de Fin
+ patron.patronage.list.label.moreInfo = Más Información
+ patron.patronage.list.button.create = Crear
+ 
+ patron.patronage.form.label.status = Estado
+ patron.patronage.form.label.code = Código
+ patron.patronage.form.label.legalStuff = Asuntos Legales
+ patron.patronage.form.label.budget = Presupuesto
+ patron.patronage.form.label.creationMoment = Momento de Creación
+ patron.patronage.form.label.startDate = Fecha de Inicio
+ patron.patronage.form.label.endDate = Fecha de Fin
+ patron.patronage.form.label.period = Periodo
+ patron.patronage.form.label.moreInfo = Más Información
+ patron.patronage.list.label.published = Publicado
+ patron.patronage.form.label.proposed = PROPUESTO
+ patron.patronage.form.label.accepted = ACEPTADO
+ patron.patronage.form.label.denied = DENEGADO
+ patron.patronage.form.label.inventor = Inventor
+ patron.patronage.form.label.inventor.username = Nombre de Usuario del Inventor
+ patron.patronage.form.label.inventor.name = Nombre del Inventor 
+ patron.patronage.form.label.inventor.surname = Apellido del Inventor
+ patron.patronage.form.label.inventor.email = Correo del Inventor
+ patron.patronage.form.label.patron.moreInfo = Más Información del Patrón
+ patron.patronage.form.label.patron.company = Compañía del Patrón
+ patron.patronage.form.label.patron.statement = Estado del Patrón
+ patron.patronage.form.label.patron.userAccount.username = Nombre de Usuario del Patrón
+ patron.patronage.form.label.patron.userAccount.identity.name = Nombre del Patrón
+ patron.patronage.form.label.patron.userAccount.identity.surname = Apellidos del Patrón
+ patron.patronage.form.label.patron.userAccount.identity.email = Correo del Patrón
+ patron.patronage.form.error.duplicated = El código de patrocinio está duplicado
+ patron.patronage.form.error.unmodifiable-code = El código no puede ser modificado
+ patron.patronage.form.error.past-start-date = La fecha de inicio no puede ser previa al momento de creación
+ patron.patronage.form.error.past-end-date = La fecha de fin no puede ser previa al momento de creación
+ patron.patronage.form.error.end-date-previous-to-start-date = La fecha de fin debe ser posterior a la fecha de inicio
+ patron.patronage.form.error.too-close = La fecha de inicio es demasiado cercana a la de creación (mínimo 1 mes de separación)
+ patron.patronage.form.error.insufficient-duration = El patrocinio debe durar al menos un mes
+ patron.patronage.form.error.minimum-budget = El presupuesto debe ser mayor o igual a 1
+ patron.patronage.form.button.create = Crear
+ patron.patronage.form.button.update = Actualizar
+ patron.patronage.form.button.delete = Eliminar
+ patron.patronage.form.button.publish = Publicar
