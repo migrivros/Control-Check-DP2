@@ -1,0 +1,53 @@
+# i18n-es.i18n
+#
+# Copyright (C) 2012-2022 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+nventor.chimpum.list.label.title = Título
+inventor.chimpum.list.label.budget = Presupuesto
+inventor.chimpum.list.label.creationMoment = Momento de Creación
+inventor.chimpum.list.label.code = Código
+
+
+inventor.chimpum.form.label.title = Título
+inventor.chimpum.form.label.code = Código
+inventor.chimpum.form.label.description = Descripción
+inventor.chimpum.form.label.creationMoment = Momento de Creación
+inventor.chimpum.form.label.startDate = Fecha de Inicio
+inventor.chimpum.form.label.endDate = Fecha de Fin
+inventor.chimpum.form.label.link = Más Información
+inventor.chimpum.form.label.budget = Presupuesto
+inventor.chimpum.form.label.ArtefactName = Nombre del Componente
+inventor.chimpum.form.label.ArtefactCode = Código del Componente
+inventor.chimpum.form.label.ArtefactTechnology = Tecnología del Componente
+inventor.chimpum.form.label.ArtefactDescription = Descripción del Componente
+inventor.chimpum.form.label.ArtefactRetailPrice = Precio unitario del Componente
+inventor.chimpum.form.label.ArtefactConvertedPrice = Precio del Componente convertido a la Moneda predeterminada
+inventor.chimpum.form.label.ArtefactMoreInfo = Más información del Componente
+inventor.chimpum.form.label.pattern = Patrón
+
+
+inventor.item.form.button.createTool = Crear Herramienta
+inventor.item.form.button.createComponent = Crear Componente
+inventor.item.form.button.update = Actualizar
+inventor.item.form.button.publish = Publicar
+inventor.item.form.button.delete = Eliminar
+inventor.chimpum.form.button.create = Crear
+
+inventor.item.form.error.duplicated  = Código existente
+inventor.item.form.error.retail-price-currency-not-available = Tipo de moneda no disponible en el sistema
+inventor.item.form.error.retail-price-component-positive = El precio al por menor debe ser mayor que 0
+inventor.item.form.error.retail-price-tool-zero-or-positive = El precio al por menor debe ser mayor o igual que 0
+
+inventor.chimpum.form.error.duplicated = El patrón del chimpum está duplicado
+inventor.chimpum.form.error.past-start-date = La fecha de inicio no puede ser previa al momento de creación
+inventor.chimpum.form.error.too-close = La fecha de inicio es demasiado cercana a la de creación (mínimo 1 mes de separación)
+inventor.chimpum.form.error.past-end-date = La fecha de fin no puede ser previa al momento de creación
+inventor.chimpum.form.error.end-date-previous-to-start-date = La fecha de fin debe ser posterior a la fecha de inicio
+inventor.chimpum.form.error.duration = El Chimpum debe durar al menos una semana
+inventor.chimpum.form.error.minimum-budget = El presupuesto debe ser mayor o igual a 0

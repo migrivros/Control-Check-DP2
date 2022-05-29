@@ -1,10 +1,7 @@
-key,pattern,creationMoment,title,description,budget,startDate,endDate,moreInfo
-chimpum-01,AA-BB-,2000/01/01 00:00,chimp1,Primer chimpum,"EUR 0.1",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
-chimpum-02,BC-DS-,2000/01/01 00:00,chimp2,Segundo chimpum,"USD 10",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
-chimpum-03,MR-SA-,2000/01/01 00:00,chimp3,Tercero chimpum,"CAD 0.3",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
-chimpum-04,AA-AA-,2000/01/01 00:00,chimp4,Cuarto chimpum,"USD 0.1",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
-chimpum-05,AR-DF-,2000/01/01 00:00,chimp5,Quinto chimpum,"GBP 0.5",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
-chimpum-06,DS-GF-,2000/01/01 00:00,chimp6,Sexto chimpum,"EUR 0.1",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
-chimpum-07,DD-DD-,2000/01/01 00:00,chimp7,Septimo chimpum,"GBP 20",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
-chimpum-08,DF-AS-,2000/01/01 00:00,chimp8,Octavo chimpum,"USD 0.5",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
-chimpum-09,SD-AA-,2000/01/01 00:00,chimp9,Noveno chimpum,"CAD 10",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
+key,pattern,creationMoment,title,description,budget,startDate,endDate,link
+chimpum-01,AA-BB,2000/01/01 00:00,chimp1,Primer chimpum,"EUR 0.1",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
+chimpum-02,BC-DS,2000/01/01 00:00,chimp2,Segundo chimpum,"USD 10",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
+chimpum-03,MR-SA,2000/01/01 00:00,chimp3,Tercero chimpum,"CAD 0.3",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
+chimpum-04,AA-AA,2000/01/01 00:00,chimp4,Cuarto chimpum,"USD 0.1",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
+chimpum-05,AR-DF,2000/01/01 00:00,chimp5,Quinto chimpum,"GBP 0.5",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
+chimpum-06,DS-GF,2000/01/01 00:00,chimp6,Sexto chimpum,"EUR 0.1",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com

@@ -16,6 +16,7 @@ import acme.framework.controllers.Request;
 import acme.framework.datatypes.Money;
 import acme.framework.roles.Any;
 import acme.framework.services.AbstractShowService;
+import acme.roles.Inventor;
 
 @Service
 public class AnyItemShowService implements AbstractShowService<Any, Item> {
@@ -44,8 +45,26 @@ public class AnyItemShowService implements AbstractShowService<Any, Item> {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-
-		request.unbind(entity, model, "name", "code", "technology", "description", "retailPrice", "convertedPrice", "exchangeDate", "moreInfo");
+		
+		
+		final boolean isInventor = request.getPrincipal().hasRole(Inventor.class);
+		
+		model.setAttribute("isInventor", isInventor);
+		
+		model.setAttribute("hasChimpum", entity.getChimpum()!= null);
+		
+		if(entity.getChimpum()!= null) {
+			model.setAttribute("chimpumTitle", entity.getChimpum().getTitle());
+			model.setAttribute("chimpumDescription", entity.getChimpum().getDescription());
+			model.setAttribute("chimpumBudget", entity.getChimpum().getBudget());
+			model.setAttribute("chimpumStartDate", entity.getChimpum().getStartDate());
+			model.setAttribute("chimpumEndDate", entity.getChimpum().getEndDate());
+			model.setAttribute("chimpumLink", entity.getChimpum().getLink());
+		}
+		
+		model.setAttribute("itemId", entity.getId());
+		
+		request.unbind(entity, model, "name", "type", "code", "technology", "description", "retailPrice", "convertedPrice", "exchangeDate", "moreInfo");
 	}
 
 	@Override

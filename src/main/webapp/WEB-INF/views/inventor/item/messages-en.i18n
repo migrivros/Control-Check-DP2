@@ -28,6 +28,14 @@ inventor.item.form.button.create = Create
 inventor.item.form.button.update = Update
 inventor.item.form.button.delete = Delete
 inventor.item.form.button.publish = Publish
+inventor.item.form.button.associate-chimpum = Associate Chimpum
+
+inventor.item.form.label.chimpumTitle = Chimpum Title
+inventor.item.form.label.chimpumDescription = Chimpum Description
+inventor.item.form.label.chimpumBudget = Chimpum Budget
+inventor.item.form.label.chimpumStartDate = Chimpum Start Date
+inventor.item.form.label.chimpumEndDate = Chimpum End Date
+inventor.item.form.label.chimpumLink = Chimpum More Info
 
 inventor.item.form.error.duplicated  = Existing code
 inventor.item.form.error.retail-price-currency-not-available = Currency not available for the system

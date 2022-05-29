@@ -75,6 +75,7 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.inventor.patronage.list" action="/inventor/patronage/list"/>
 			<acme:menu-suboption code="master.menu.inventor.my-patronage-reports" action="/inventor/patronage-report/list"/>
+			<acme:menu-suboption code="master.menu.inventor.chimpums" action="/inventor/chimpum/list"/>
 		</acme:menu-option>
 	</acme:menu-left>
 

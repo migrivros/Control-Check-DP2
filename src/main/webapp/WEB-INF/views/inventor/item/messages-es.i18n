@@ -28,6 +28,14 @@ inventor.item.form.button.createComponent = Crear Componente
 inventor.item.form.button.update = Actualizar
 inventor.item.form.button.publish = Publicar
 inventor.item.form.button.delete = Eliminar
+inventor.item.form.button.associate-chimpum = Asociar Chimpum
+
+inventor.item.form.label.chimpumTitle = Título del Chimpum
+inventor.item.form.label.chimpumDescription = Descripción del Chimpum
+inventor.item.form.label.chimpumBudget = Presupuesto del Chimpum
+inventor.item.form.label.chimpumStartDate = Fecha de inicio del Chimpum
+inventor.item.form.label.chimpumEndDate = Fecha de fin del Chimpum
+inventor.item.form.label.chimpumLink = Más información del Chimpum
 
 inventor.item.form.error.duplicated  = Código existente
 inventor.item.form.error.retail-price-currency-not-available = Tipo de moneda no disponible en el sistema

@@ -38,7 +38,7 @@ public class Chimpum extends AbstractEntity{
 		
 		@NotBlank
 		@Column(unique=true)
-		@Pattern(regexp = "^[A-Z]{2}-[A-Z]{2}-$")  //AA-BB- +yymmdd  (luego, autogenerado)
+		@Pattern(regexp = "^[A-Z]{2}-[A-Z]{2}$")  //AA-BB +yymmdd  (luego, autogenerado)
 		private String pattern;
 		
 		@NotNull
@@ -68,7 +68,7 @@ public class Chimpum extends AbstractEntity{
 		protected Money budget;
 		
 		@URL
-		private String moreInfo;
+		private String link;
 		
 		
 	// Derived attributes -----------------------------------------------------
@@ -77,10 +77,17 @@ public class Chimpum extends AbstractEntity{
 			final Calendar cal = Calendar.getInstance();
 			cal.setTime(this.creationMoment);
 		    final String yy = String.valueOf(cal.get(Calendar.YEAR)).substring(2);
-	        final String mm = String.valueOf(cal.get(Calendar.MONTH));
-	        final String dd = String.valueOf(cal.get(Calendar.DAY_OF_MONTH));
+	        String mm = String.valueOf(cal.get(Calendar.MONTH)+1);
+	        String dd = String.valueOf(cal.get(Calendar.DAY_OF_MONTH));
 	        
-	        return this.pattern + yy + mm + dd;
+	        if(mm.length() == 1) {
+	        	mm = "0" + mm;
+	        }
+	        if(dd.length() == 1) {
+	        	dd = "0" + dd;
+	        }
+	        
+	        return this.pattern + "-" + yy + mm + dd;
 			
 		}
 		

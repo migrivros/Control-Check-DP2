@@ -27,7 +27,7 @@ import acme.roles.Inventor;
 public class InventorItemCreateService implements AbstractCreateService<Inventor, Item> {
 
 	@Autowired
-	protected InventorItemRepository					repository;
+	protected InventorItemRepository repository;
 
 	@Override
 	public boolean authorise(final Request<Item> request) {

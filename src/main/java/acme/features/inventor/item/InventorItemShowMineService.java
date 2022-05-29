@@ -88,8 +88,21 @@ public class InventorItemShowMineService implements AbstractShowService<Inventor
 		assert request != null;
 		assert entity != null;
 		assert model != null;
+		
+		model.setAttribute("itemId", entity.getId());
+		
+		model.setAttribute("hasChimpum", entity.getChimpum()!= null);
+		
+		if(entity.getChimpum()!= null) {
+			model.setAttribute("chimpumTitle", entity.getChimpum().getTitle());
+			model.setAttribute("chimpumDescription", entity.getChimpum().getDescription());
+			model.setAttribute("chimpumBudget", entity.getChimpum().getBudget());
+			model.setAttribute("chimpumStartDate", entity.getChimpum().getStartDate());
+			model.setAttribute("chimpumEndDate", entity.getChimpum().getEndDate());
+			model.setAttribute("chimpumLink", entity.getChimpum().getLink());
+		}
 
-		request.unbind(entity, model, "name", "code", "type", "technology", "description", "retailPrice", "convertedPrice", "moreInfo", "published");
+		request.unbind(entity, model, "name","type", "code", "technology", "description", "retailPrice", "convertedPrice", "moreInfo", "published");
 
 	}
 
