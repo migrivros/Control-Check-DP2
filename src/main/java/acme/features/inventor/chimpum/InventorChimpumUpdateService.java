@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.Chimpum;
 import acme.entities.Item;
+import acme.entities.ItemType;
 import acme.framework.components.models.Model;
 import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
@@ -40,7 +41,7 @@ public class InventorChimpumUpdateService implements AbstractUpdateService<Inven
 		item = this.repository.findOneComponentByChimpumId(id);
 		inventor = item.getInventor();
 		principal = request.getPrincipal();
-		result = (inventor.getUserAccount().getId() == principal.getAccountId() && !item.isPublished());
+		result = (inventor.getUserAccount().getId() == principal.getAccountId() && !item.isPublished() && item.getType() == ItemType.COMPONENT);
 
 		return result;
 	}
@@ -76,23 +77,25 @@ public class InventorChimpumUpdateService implements AbstractUpdateService<Inven
 		assert errors != null;
 		
 		
-		if (!errors.hasErrors("startDate")) {
-			errors.state(request, entity.getStartDate().after(entity.getCreationMoment()), "startDate", "inventor.chimpum.form.error.past-start-date");
-		}
-		if(!errors.hasErrors("startDate")) {
-			final Date oneMonthAfterCreationDate = DateUtils.addMonths(entity.getCreationMoment(), 1);
-			errors.state(request,entity.getStartDate().after(oneMonthAfterCreationDate), "startDate", "inventor.chimpum.form.error.too-close");
+		if(entity.getStartDate()!=null) {
+			if (!errors.hasErrors("startDate")) {
+				errors.state(request, entity.getStartDate().after(entity.getCreationMoment()), "startDate", "inventor.chimpum.form.error.past-start-date");
+			}
+			if(!errors.hasErrors("startDate")) {
+				final Date oneMonthAfterCreationDate = DateUtils.addMonths(entity.getCreationMoment(), 1);
+				errors.state(request,entity.getStartDate().after(oneMonthAfterCreationDate), "startDate", "inventor.chimpum.form.error.too-close");
+			}
+			if(!errors.hasErrors("endDate")) {	
+				errors.state(request, entity.getEndDate().after(entity.getStartDate()), "endDate", "inventor.chimpum.form.error.end-date-previous-to-start-date");
+			}
+			if(!errors.hasErrors("endDate")) {
+				final Date oneWeekAfterStartDate=DateUtils.addDays(entity.getStartDate(), 7);
+				errors.state(request,entity.getEndDate().after(oneWeekAfterStartDate), "endDate", "inventor.chimpum.form.error.insufficient-duration");
+			}
 		}
 		
 		if(!errors.hasErrors("endDate")) {
 			errors.state(request, entity.getEndDate().after(entity.getCreationMoment()), "endDate", "inventor.chimpum.form.error.past-end-date");
-		}
-		if(!errors.hasErrors("endDate")) {	
-			errors.state(request, entity.getEndDate().after(entity.getStartDate()), "endDate", "inventor.chimpum.form.error.end-date-previous-to-start-date");
-		}
-		if(!errors.hasErrors("endDate")) {
-			final Date oneWeekAfterStartDate=DateUtils.addDays(entity.getStartDate(), 7);
-			errors.state(request,entity.getEndDate().after(oneWeekAfterStartDate), "endDate", "inventor.chimpum.form.error.insufficient-duration");
 		}
 		
 		if(!errors.hasErrors("budget")){

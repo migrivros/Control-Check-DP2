@@ -19,7 +19,7 @@
 
 	<acme:list-column code="inventor.chimpum.list.label.title" path="title" width="30%" />
 	<acme:list-column code="inventor.chimpum.list.label.code" path="code" width="20%" />
-	<acme:list-column code="inventor.chimpum.list.label.creationMoment" path="creationMoment" width="30%" />
+	<acme:list-column code="inventor.chimpum.list.label.startDate" path="startDate" width="30%" />
 	<acme:list-column code="inventor.chimpum.list.label.budget" path="budget" width="20%" />
 
 </acme:list>

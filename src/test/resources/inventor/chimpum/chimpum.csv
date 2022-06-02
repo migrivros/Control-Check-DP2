@@ -1,0 +1,3 @@
+recordIndex,title,code,description,budget,startDate,endDate,link
+0,chimp1,AA-BB-000101,Primer chimpum,"EUR 0.10",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com
+1,chimp2,BC-DS-000101,Segundo chimpum,"USD 10.00",2022/05/24 00:00,2022/07/24 00:00, http://www.example.com

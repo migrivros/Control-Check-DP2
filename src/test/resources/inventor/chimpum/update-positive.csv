@@ -1,0 +1,7 @@
+recordIndex,title,description,budget,startDate,endDate,link
+0,chimpTestUpdate,Primer chimpum,"EUR 0.10",2023/05/25 00:00,2030/09/25 00:00, http://www.example.com
+0,chimp1,Test chimpum Update,"EUR 50.50",2030/05/25 00:00,2030/09/25 00:00, http://www.example.com
+0,chimp1,Primer chimpum,"USD 50.00",2023/05/25 00:00,2030/09/25 00:00, http://www.example.com
+0,chimp1,Primer chimpum,"EUR 0.10",2027/05/25 00:00,2030/09/25 00:00, http://www.example.com
+0,chimp1,Primer chimpum,"EUR 0.10",2023/05/25 00:00,2035/09/25 00:00, http://www.example.com
+0,chimp1,Primer chimpum,"EUR 0.10",2023/05/25 00:00,2030/09/25 00:00, http://www.us.es

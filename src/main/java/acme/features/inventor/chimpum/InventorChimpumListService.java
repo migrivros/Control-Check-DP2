@@ -50,7 +50,7 @@ public class InventorChimpumListService implements AbstractListService<Inventor,
 		
 		final String code = entity.getCode();
 
-		request.unbind(entity, model, "title", "creationMoment", "budget");
+		request.unbind(entity, model, "title", "startDate", "budget");
 		model.setAttribute("code", code);
 	}
 
