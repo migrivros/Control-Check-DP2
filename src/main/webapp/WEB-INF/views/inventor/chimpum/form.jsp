@@ -28,24 +28,29 @@
 	<acme:input-textbox code="inventor.chimpum.form.label.title" path="title"/>
 	<acme:input-textarea code="inventor.chimpum.form.label.description" path="description"/>
 	<acme:input-money code="inventor.chimpum.form.label.budget" path="budget"/>
-	<acme:input-textbox code="inventor.chimpum.form.label.startDate" path="startDate"/>
-	<acme:input-textbox code="inventor.chimpum.form.label.endDate" path="endDate"/>
+	<acme:input-moment code="inventor.chimpum.form.label.startDate" path="startDate"/>
+	<acme:input-moment code="inventor.chimpum.form.label.endDate" path="endDate"/>
 	<acme:input-url code="inventor.chimpum.form.label.link" path="link"/>
+	
+	<jstl:if test="${acme:anyOf(command, 'show, update, delete') && isPublishedItem == 'false'}">
+		<br>
+		<h1>---------------------------------------------------------------------</h1>
+		<br>
+		<acme:input-textbox code="inventor.chimpum.form.label.ArtefactName" path="ArtefactName" readonly="true"/>
+		<acme:input-textbox code="inventor.chimpum.form.label.ArtefactCode" placeholder="AAA-000-A" path="ArtefactCode" readonly="true"/>
+		<acme:input-textbox code="inventor.chimpum.form.label.ArtefactTechnology" path="ArtefactTechnology" readonly="true"/>
+		<acme:input-textarea code="inventor.chimpum.form.label.ArtefactDescription" path="ArtefactDescription" readonly="true"/>
+		<acme:input-money code="inventor.chimpum.form.label.ArtefactRetailPrice" path="ArtefactRetailPrice" readonly="true"/>
+		<acme:input-url code="inventor.chimpum.form.label.ArtefactMoreInfo" path="ArtefactMoreInfo" readonly="true"/>
+	</jstl:if>
 	
 	<jstl:if test="${command == 'create'}">
 		<acme:submit code="inventor.chimpum.form.button.create" action="/inventor/chimpum/create?itemId=${itemId}"/>
 	</jstl:if>
 	
-	<jstl:if test="${command == 'show'}">
-	<br>
-	<h1>---------------------------------------------------------------------</h1>
-	<br>
-	<acme:input-textbox code="inventor.chimpum.form.label.ArtefactName" path="ArtefactName"/>
-	<acme:input-textbox code="inventor.chimpum.form.label.ArtefactCode" placeholder="AAA-000-A" path="ArtefactCode"/>
-	<acme:input-textbox code="inventor.chimpum.form.label.ArtefactTechnology" path="ArtefactTechnology"/>
-	<acme:input-textarea code="inventor.chimpum.form.label.ArtefactDescription" path="ArtefactDescription"/>
-	<acme:input-money code="inventor.chimpum.form.label.ArtefactRetailPrice" path="ArtefactRetailPrice"/>
-	<acme:input-url code="inventor.chimpum.form.label.ArtefactMoreInfo" path="ArtefactMoreInfo"/>
+	<jstl:if test="${acme:anyOf(command, 'show, update, delete') && isPublishedItem == 'false'}">
+			<acme:submit code="inventor.chimpum.form.button.update" action="/inventor/chimpum/update"/>
+			<acme:submit code="inventor.chimpum.form.button.delete" action="/inventor/chimpum/delete"/>
 	</jstl:if>
 	
 </acme:form> 

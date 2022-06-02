@@ -22,12 +22,3 @@ any.item.form.label.retailPrice = Retail Price
 any.item.form.label.convertedPrice = Converted Price
 any.item.form.label.more-info = More Info
 
-any.item.form.label.chimpumTitle = Chimpum Title
-any.item.form.label.chimpumDescription = Chimpum Description
-any.item.form.label.chimpumBudget = Chimpum Budget
-any.item.form.label.chimpumStartDate = Chimpum Start Date
-any.item.form.label.chimpumEndDate = Chimpum End Date
-any.item.form.label.chimpumLink = Chimpum More Info
-
-any.item.form.button.associate-chimpum = Associate Chimpum
-

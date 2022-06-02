@@ -35,7 +35,9 @@ public class InventorChimpumListService implements AbstractListService<Inventor,
 
 		Collection<Chimpum> result;
 		
-		result = this.repository.findManyChimpums();
+		final int inventorId = request.getPrincipal().getActiveRoleId();
+		
+		result = this.repository.findMyChimpums(inventorId);
 		
 		return result;
 	}

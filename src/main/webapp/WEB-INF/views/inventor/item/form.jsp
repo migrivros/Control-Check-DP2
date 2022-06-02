@@ -18,7 +18,12 @@
 <acme:form>
 
 	<acme:input-textbox code="inventor.item.form.label.name" path="name"/>
-	<acme:input-textbox code="inventor.item.form.label.code" placeholder="ABC-123-A" path="code"/>
+	<jstl:if test="${acme:anyOf(command, 'show, update, delete, publish')}">
+			<acme:input-textbox code="inventor.item.form.label.code" placeholder="ABC-123-A" path="code" readonly="true"/>
+	</jstl:if>
+	<jstl:if test="${command == 'create'}">
+			<acme:input-textbox code="inventor.item.form.label.code" placeholder="ABC-123-A" path="code"/>
+	</jstl:if>
 	<acme:input-textbox code="inventor.item.form.label.technology" path="technology"/>
 	<acme:input-textarea code="inventor.item.form.label.description" path="description"/>
 	<acme:input-money code="inventor.item.form.label.retailPrice" path="retailPrice"/>
@@ -31,6 +36,7 @@
 		<br>
 		<h1>---------------------------------------------------------------------</h1>
 		<br>
+		<acme:input-textbox code="inventor.item.form.label.chimpumCode" path="chimpumCode" readonly="true"/>
 		<acme:input-textbox code="inventor.item.form.label.chimpumTitle" path="chimpumTitle" readonly="true"/>
 		<acme:input-textarea code="inventor.item.form.label.chimpumDescription" path="chimpumDescription" readonly="true"/>
 		<acme:input-money code="inventor.item.form.label.chimpumBudget" path="chimpumBudget" readonly="true"/>
@@ -49,7 +55,7 @@
 		<acme:submit code="inventor.item.form.button.delete" action="/inventor/item/delete"/>
 	</jstl:if>
 	
-	<jstl:if test="${type == 'COMPONENT' && command == 'show' && hasChimpum == 'false'}">
+	<jstl:if test="${type == 'COMPONENT' && command == 'show' && hasChimpum == 'false' && published == 'false'}">
 		<acme:button code="inventor.item.form.button.associate-chimpum" action="/inventor/chimpum/create?itemId=${itemId}"/>
 	</jstl:if>
 	

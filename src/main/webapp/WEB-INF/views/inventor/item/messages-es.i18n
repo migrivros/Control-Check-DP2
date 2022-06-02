@@ -36,6 +36,7 @@ inventor.item.form.label.chimpumBudget = Presupuesto del Chimpum
 inventor.item.form.label.chimpumStartDate = Fecha de inicio del Chimpum
 inventor.item.form.label.chimpumEndDate = Fecha de fin del Chimpum
 inventor.item.form.label.chimpumLink = Más información del Chimpum
+inventor.item.form.label.chimpumCode = Código del Chimpum
 
 inventor.item.form.error.duplicated  = Código existente
 inventor.item.form.error.retail-price-currency-not-available = Tipo de moneda no disponible en el sistema

@@ -94,6 +94,7 @@ public class InventorItemShowMineService implements AbstractShowService<Inventor
 		model.setAttribute("hasChimpum", entity.getChimpum()!= null);
 		
 		if(entity.getChimpum()!= null) {
+			model.setAttribute("chimpumCode", entity.getChimpum().getCode());
 			model.setAttribute("chimpumTitle", entity.getChimpum().getTitle());
 			model.setAttribute("chimpumDescription", entity.getChimpum().getDescription());
 			model.setAttribute("chimpumBudget", entity.getChimpum().getBudget());

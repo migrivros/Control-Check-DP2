@@ -33,17 +33,15 @@ inventor.chimpum.form.label.ArtefactMoreInfo = Component More Info
 inventor.chimpum.form.label.pattern = Pattern
 
 
-
-inventor.item.form.button.create = Create
-inventor.item.form.button.update = Update
-inventor.item.form.button.delete = Delete
-inventor.item.form.button.publish = Publish
 inventor.chimpum.form.button.create = Create
+inventor.chimpum.form.button.update = Update
+inventor.chimpum.form.button.delete = Delete
 
 inventor.chimpum.form.error.duplicated = Duplicated pattern of Chimpum 
 inventor.chimpum.form.error.past-start-date = The start date cannot be previous to the creation moment
 inventor.chimpum.form.error.too-close = The start date is too close to creation moment (1 month between minimum)
 inventor.chimpum.form.error.past-end-date = The end date cannot be previous to the creation moment
 inventor.chimpum.form.error.end-date-previous-to-start-date = The end date must be after the start date
-inventor.chimpum.form.error.duration = The duration must be at least one week
-inventor.chimpum.form.error.minimum-budget = The budget must be equals or higher than 0
+inventor.chimpum.form.error.insufficient-duration = The duration must be at least one week
+inventor.chimpum.form.error.minimum-budget = The budget must be higher than 0
+inventor.chimpum.form.error.retail-price-currency-not-available = Currency not available for the system

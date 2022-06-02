@@ -1,7 +1,6 @@
 
 package acme.features.inventor.chimpum;
 
-
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -17,12 +16,13 @@ import acme.framework.controllers.Errors;
 import acme.framework.controllers.Request;
 import acme.framework.datatypes.Money;
 import acme.framework.entities.Principal;
-import acme.framework.services.AbstractCreateService;
+import acme.framework.services.AbstractUpdateService;
 import acme.roles.Inventor;
 
 @Service
-public class InventorChimpumCreateService implements AbstractCreateService<Inventor, Chimpum> {
+public class InventorChimpumUpdateService implements AbstractUpdateService<Inventor, Chimpum> {
 
+	
 	@Autowired
 	protected InventorChimpumRepository	repository;
 
@@ -36,8 +36,8 @@ public class InventorChimpumCreateService implements AbstractCreateService<Inven
 		Inventor inventor;
 		Principal principal;
 
-		id = request.getModel().getInteger("itemId");
-		item = this.repository.findItemById(id);
+		id = request.getModel().getInteger("id");
+		item = this.repository.findOneComponentByChimpumId(id);
 		inventor = item.getInventor();
 		principal = request.getPrincipal();
 		result = (inventor.getUserAccount().getId() == principal.getAccountId() && !item.isPublished());
@@ -46,39 +46,26 @@ public class InventorChimpumCreateService implements AbstractCreateService<Inven
 	}
 
 	@Override
-	public Chimpum instantiate(final Request<Chimpum> request) {
+	public Chimpum findOne(final Request<Chimpum> request) {
 		assert request != null;
-		
-		final Chimpum result = new Chimpum();
-		
-		final Date moment = new Date(System.currentTimeMillis() - 1);
-	
-        result.setCreationMoment(moment);
-        result.setPattern("");
-        result.setTitle("");
-        result.setDescription("");
-		
+
+		Chimpum result;
+		int id;
+
+		id = request.getModel().getInteger("id");
+		result = this.repository.findOneChimpumById(id);
+
 		return result;
-	}
 
-	
-	public boolean validateAvailableCurrencyBudget(final Money retailPrice) {
-		
-		final String currencies = this.repository.findAvailableCurrencies();
-		final List<Object> listOfAvailableCurrencies = Arrays.asList((Object[])currencies.split(";"));
-
-		
-		return listOfAvailableCurrencies.contains(retailPrice.getCurrency());		
 	}
 	
-
 	@Override
 	public void bind(final Request<Chimpum> request, final Chimpum entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
 		
-		request.bind(entity, errors, "pattern", "title", "budget","description","startDate","endDate", "link");
+		request.bind(entity, errors, "title", "budget","description","startDate","endDate", "link");
 
 	}
 
@@ -88,12 +75,6 @@ public class InventorChimpumCreateService implements AbstractCreateService<Inven
 		assert entity != null;
 		assert errors != null;
 		
-		if (!errors.hasErrors("pattern")) {
-			Chimpum existing;
-
-			existing = this.repository.findChimpumByPattern(entity.getPattern());
-			errors.state(request, existing == null, "pattern", "inventor.chimpum.form.error.duplicated");
-		}
 		
 		if (!errors.hasErrors("startDate")) {
 			errors.state(request, entity.getStartDate().after(entity.getCreationMoment()), "startDate", "inventor.chimpum.form.error.past-start-date");
@@ -129,26 +110,39 @@ public class InventorChimpumCreateService implements AbstractCreateService<Inven
 		assert entity != null;
 		assert model != null;
 		
-		model.setAttribute("itemId", request.getModel().getAttribute("itemId"));
+		final int id = request.getModel().getInteger("id");
+		final Chimpum chimpum = this.repository.findOneChimpumById(id);
+		model.setAttribute("code", chimpum.getCode());
+		
+		
+		final Item item = this.repository.findOneComponentByChimpumId(id);
 
-		request.unbind(entity, model, "pattern", "title", "budget","description","startDate","endDate", "link");
+		model.setAttribute("isPublishedItem", item.isPublished());
+		model.setAttribute("ArtefactName", item.getName());
+		model.setAttribute("ArtefactCode", item.getCode());
+		model.setAttribute("ArtefactTechnology", item.getTechnology());
+		model.setAttribute("ArtefactDescription", item.getDescription());
+		model.setAttribute("ArtefactRetailPrice", item.getRetailPrice());
+		model.setAttribute("ArtefactMoreInfo", item.getMoreInfo());
+
+		request.unbind(entity, model, "title", "budget","description","startDate","endDate", "link");
 	}
+
 
 	@Override
-	public void create(final Request<Chimpum> request, final Chimpum entity) {
+	public void update(final Request<Chimpum> request, final Chimpum entity) {
 		assert request != null;
 		assert entity != null;
-
-		final Integer itemId = Integer.valueOf(request.getModel().getAttribute("itemId").toString()); 
-		final Item item = this.repository.findItemById(itemId);
-		
-		final Date moment = new Date(System.currentTimeMillis() - 1);
-		entity.setCreationMoment(moment);
 		
 		this.repository.save(entity);
-		
-		item.setChimpum(entity);
-		this.repository.save(item);
 	}
+	
+	
+	public boolean validateAvailableCurrencyBudget(final Money retailPrice) {
+		final String currencies = this.repository.findAvailableCurrencies();
+		final List<Object> listOfAvailableCurrencies = Arrays.asList((Object[])currencies.split(";"));
 
+		return listOfAvailableCurrencies.contains(retailPrice.getCurrency());		
+	}
+	
 }

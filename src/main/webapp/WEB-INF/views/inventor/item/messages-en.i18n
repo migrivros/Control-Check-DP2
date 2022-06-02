@@ -36,6 +36,7 @@ inventor.item.form.label.chimpumBudget = Chimpum Budget
 inventor.item.form.label.chimpumStartDate = Chimpum Start Date
 inventor.item.form.label.chimpumEndDate = Chimpum End Date
 inventor.item.form.label.chimpumLink = Chimpum More Info
+inventor.item.form.label.chimpumCode = Chimpum Code
 
 inventor.item.form.error.duplicated  = Existing code
 inventor.item.form.error.retail-price-currency-not-available = Currency not available for the system

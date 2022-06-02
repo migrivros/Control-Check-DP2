@@ -23,21 +23,4 @@
 	<acme:input-money code="any.item.form.label.retailPrice" path="retailPrice"/>
 	<acme:input-money code="any.item.form.label.convertedPrice" path="convertedPrice"/>
 	<acme:input-url code="any.item.form.label.more-info" path="moreInfo"/>
-	
-	<jstl:if test="${command == 'show' && hasChimpum == 'true'}">
-		<br>
-		<h1>---------------------------------------------------------------------</h1>
-		<br>
-		<acme:input-textbox code="any.item.form.label.chimpumTitle" path="chimpumTitle" readonly="true"/>
-		<acme:input-textarea code="any.item.form.label.chimpumDescription" path="chimpumDescription" readonly="true"/>
-		<acme:input-money code="any.item.form.label.chimpumBudget" path="chimpumBudget" readonly="true"/>
-		<acme:input-textbox code="any.item.form.label.chimpumStartDate" path="chimpumStartDate" readonly="true"/>
-		<acme:input-textbox code="any.item.form.label.chimpumEndDate" path="chimpumEndDate" readonly="true"/>
-		<acme:input-url code="any.item.form.label.chimpumLink" path="chimpumLink" readonly="true"/>
-	</jstl:if>
-	
 </acme:form>
-
-<jstl:if test="${type == 'COMPONENT' && command == 'show'  && isInventor == 'true' && hasChimpum == 'false'}">
-		<acme:button code="any.item.form.button.associate-chimpum" action="/inventor/chimpum/create?itemId=${itemId}"/>
-</jstl:if>

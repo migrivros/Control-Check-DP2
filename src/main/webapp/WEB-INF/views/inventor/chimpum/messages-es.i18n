@@ -31,13 +31,10 @@ inventor.chimpum.form.label.ArtefactConvertedPrice = Precio del Componente conve
 inventor.chimpum.form.label.ArtefactMoreInfo = Más información del Componente
 inventor.chimpum.form.label.pattern = Patrón
 
-
-inventor.item.form.button.createTool = Crear Herramienta
-inventor.item.form.button.createComponent = Crear Componente
-inventor.item.form.button.update = Actualizar
-inventor.item.form.button.publish = Publicar
-inventor.item.form.button.delete = Eliminar
 inventor.chimpum.form.button.create = Crear
+inventor.chimpum.form.button.update = Actualizar
+inventor.chimpum.form.button.delete = Eliminar
+
 
 inventor.item.form.error.duplicated  = Código existente
 inventor.item.form.error.retail-price-currency-not-available = Tipo de moneda no disponible en el sistema
@@ -49,5 +46,6 @@ inventor.chimpum.form.error.past-start-date = La fecha de inicio no puede ser pr
 inventor.chimpum.form.error.too-close = La fecha de inicio es demasiado cercana a la de creación (mínimo 1 mes de separación)
 inventor.chimpum.form.error.past-end-date = La fecha de fin no puede ser previa al momento de creación
 inventor.chimpum.form.error.end-date-previous-to-start-date = La fecha de fin debe ser posterior a la fecha de inicio
-inventor.chimpum.form.error.duration = El Chimpum debe durar al menos una semana
-inventor.chimpum.form.error.minimum-budget = El presupuesto debe ser mayor o igual a 0
+inventor.chimpum.form.error.insufficient-duration = El Chimpum debe durar al menos una semana
+inventor.chimpum.form.error.minimum-budget = El presupuesto debe ser mayor que 0
+inventor.chimpum.form.error.retail-price-currency-not-available = Tipo de moneda no disponible en el sistema

@@ -106,11 +106,11 @@ public class InventorItemUpdateService implements AbstractUpdateService<Inventor
 		assert errors != null;
 
 
-			entity.setPublished(false);
-			this.repository.save(entity);
+		entity.setPublished(false);
+		this.repository.save(entity);
 		
 
-		request.bind(entity, errors, "name", "code", "technology", "description", "retailPrice", "moreInfo");
+		request.bind(entity, errors, "name", "technology", "description", "retailPrice", "moreInfo");
 	}
 
 
